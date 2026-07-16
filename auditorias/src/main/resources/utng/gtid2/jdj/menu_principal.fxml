@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1">
+
+    <center>
+        <TabPane tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+
+                <Tab text="Empresas">
+                    <content>
+                        <fx:include source="empresas.fxml"/>
+                    </content>
+                </Tab>
+
+                <Tab text="Auditores">
+                    <content>
+                        <fx:include source="auditores.fxml"/>
+                    </content>
+                </Tab>
+
+                <Tab text="Auditorias">
+                    <content>
+                        <fx:include source="auditorias.fxml"/>
+                    </content>
+                </Tab>
+
+                <Tab text="Captura de Evaluación">
+                    <content>
+                        <fx:include source="captura_evaluacion.fxml"/>
+                    </content>
+                </Tab>
+
+                <Tab text="Hallazgos y Plan de Acción">
+                    <content>
+                        <fx:include source="hallazgos.fxml"/>
+                    </content>
+                </Tab>
+
+                <Tab text="Dashboard y Reportes">
+                    <content>
+                        <fx:include source="dashboard.fxml"/>
+                    </content>
+                </Tab>
+
+            </tabs>
+        </TabPane>
+    </center>
+
+</BorderPane>

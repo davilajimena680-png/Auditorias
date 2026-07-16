@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="utng.gtid2.dab.controlador.AuditoriasController">
+
+    <padding>
+        <Insets top="15" right="15" bottom="15" left="15"/>
+    </padding>
+
+    <top>
+        <Label text="Gestión de auditorías"
+               styleClass="titulo-seccion"/>
+    </top>
+
+    <center>
+        <TableView fx:id="tblAuditorias">
+            <columns>
+
+                <TableColumn fx:id="colId"
+                             text="ID"
+                             prefWidth="50"/>
+
+                <TableColumn fx:id="colEmpresa"
+                             text="Empresa"
+                             prefWidth="220"/>
+
+                <TableColumn fx:id="colAuditor"
+                             text="Auditor"
+                             prefWidth="200"/>
+
+                <TableColumn fx:id="colFechaInicio"
+                             text="Fecha inicio"
+                             prefWidth="110"/>
+
+                <TableColumn fx:id="colFechaFin"
+                             text="Fecha fin"
+                             prefWidth="110"/>
+
+                <TableColumn fx:id="colEstatus"
+                             text="Estatus"
+                             prefWidth="110"/>
+
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <VBox spacing="10">
+
+            <GridPane hgap="10" vgap="8">
+
+                <padding>
+                    <Insets top="10" bottom="10"/>
+                </padding>
+
+                <Label text="Empresa:"
+                       GridPane.rowIndex="0"
+                       GridPane.columnIndex="0"/>
+
+                <ComboBox fx:id="cmbEmpresa"
+                          GridPane.rowIndex="0"
+                          GridPane.columnIndex="1"
+                          prefWidth="240"/>
+
+                <Label text="Auditor:"
+                       GridPane.rowIndex="0"
+                       GridPane.columnIndex="2"/>
+
+                <ComboBox fx:id="cmbAuditor"
+                          GridPane.rowIndex="0"
+                          GridPane.columnIndex="3"
+                          prefWidth="220"/>
+
+                <Label text="Fecha de inicio:"
+                       GridPane.rowIndex="1"
+                       GridPane.columnIndex="0"/>
+
+                <DatePicker fx:id="dpFechaInicio"
+                            GridPane.rowIndex="1"
+                            GridPane.columnIndex="1"/>
+
+            </GridPane>
+
+            <HBox spacing="10">
+
+                <Button text="Crear auditoría"
+                        onAction="#crearAuditoria"/>
+
+                <Button text="Concluir seleccionada"
+                        onAction="#concluirAuditoria"/>
+
+                <Button text="Cancelar seleccionada"
+                        styleClass="button-secundario"
+                        onAction="#cancelarAuditoria"/>
+
+                <Button text="Eliminar"
+                        styleClass="button-peligro"
+                        onAction="#eliminarAuditoria"/>
+
+            </HBox>
+
+        </VBox>
+    </bottom>
+
+</BorderPane>
