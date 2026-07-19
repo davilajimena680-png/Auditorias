@@ -4,6 +4,6 @@
 ![Empresas](Image/Empresas.png)
 ![Hallazgos](Image/Hallazgos.png)
 ![reporteexel](Image/reporteexel.png)
-![reportepdf](Image/reportepdf(1).png)
+![reportepdf](Image/reportepdf (1).png)
 ![reporteword](Image/reporteword.png)
 ![Reportes](Image/Reportes.png)
