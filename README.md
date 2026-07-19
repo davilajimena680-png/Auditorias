@@ -1,1 +1,9 @@
-# Auditorias
+![Auditores](image/Auditores.png)
+![Auditorias](image/Auditorias.png)
+![CapturaEvaluacion](image/CapturaEvaluacion.png)
+![Empresas](image/Empresas.png)
+![Hallazgos](image/Hallazgos.png)
+![reporteexel](image/reporteexel.png)
+![reportepdf](image/reportepdf(1).png)
+![reporteword](image/reporteword.png)
+![Reportes](image/Reportes.png)
